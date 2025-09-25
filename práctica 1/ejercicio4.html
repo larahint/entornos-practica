@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Año 2008</title>
+</head>
+<body>
+
+  <!-- Imagen con enlace al sitio de la Universidad -->
+  <a href="https://www.frro.utn.edu.ar" target="_blank" rel="noopener">
+    <img src="utn_logo.jpg" alt="UTN-FRRO" />
+  </a>
+
+  <!-- Línea -->
+  <hr />
+
+  <!-- Título -->
+  <h1>AÑO 2008</h1>
+
+  <!-- Tabla -->
+    <table width="200" border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <td colspan="2">
+        <div align="center"><strong>Exámenes</strong></div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">Fecha: ……………………………</td>
+        <td>Aprobados</td>
+    </tr>
+    <tr>
+        <td width="50%">24/30</td>
+    </tr>
+    </table>
+
+
+  <!-- Lista ordenada con enlaces (interno y externo) -->
+  <ol>
+    <li><a href="#enunciado">Enunciado del examen</a></li>
+    <li><a href="resolucion.html" target="_blank" rel="noopener">Resolución</a></li>
+  </ol>
+
+  <!-- Formulario que se envía por correo -->
+  <p>Puede realizar consultas completando el siguiente formulario:</p>
+  <form action="mailto:x@x.com" method="post" enctype="text/plain">
+    <label for="email">e-mail:</label>
+    <input type="email" id="email" name="email" /><br /><br />
+    <label for="consulta">consulta:</label><br />
+    <textarea id="consulta" name="consulta" rows="4" cols="40"></textarea><br /><br />
+    <input type="submit" value="ENVIAR" />
+    <input type="reset" value="BORRAR" />
+  </form>
+
+  <!-- Subtítulo y bloque de texto -->
+  <h2 id="enunciado">Enunciado del examen</h2>
+  <p>Ejercicio 1: ...............................</p>
+  <p>Ejercicio 2: ...............................</p>
+
+  <!-- Enlace a correo -->
+  <p>
+    Para más información dirigirse a
+    <a href="mailto:contacto@xx.com">contacto@xx.com</a>
+  </p>
+
+</body>
+</html>
+

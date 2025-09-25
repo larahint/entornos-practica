@@ -1,0 +1,246 @@
+<!-- 3.a) -->
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a> <!-- Es un enlace que lleva a la página principal de Google en la misma pestaña. El atributo href es obligatorio y define la URL de destino. -->
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a> <!-- Similar al anterior, pero abre el enlace en una nueva pestaña o ventana del navegador. El atributo target="_blank" es opcional y especifica este comportamiento. -->
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"> </a> <!-- Este enlace también lleva a Google, pero incluye varios atributos adicionales que proporcionan información sobre el recurso enlazado. type="text/html" indica que el recurso es un documento HTML, hreflang="es" señala que está en español, charset="utf-8" especifica la codificación de caracteres, y rel="help" describe la relación del enlace con el documento actual. Todos estos atributos son opcionales. -->
+<a href="#">Click aquí para ir a Google</a> <!-- Este enlace no lleva a ninguna parte, ya que el atributo href="#" apunta a la misma página. El atributo href es obligatorio. -->
+<a href="#arriba">Click aquí para volver arriba</a> <!-- Este enlace lleva a la parte superior de la misma página, donde se encuentra el ancla con id="arriba". El atributo href="#arriba" es obligatorio y define el destino del enlace dentro del mismo documento. -->
+<a name="arriba" id="arriba"></a> <!-- Este es un ancla que marca una posición en la página a la que se puede enlazar. Los atributos name e id son opcionales, pero id es más comúnmente utilizado en HTML5 para identificar elementos de forma única. -->
+
+<!--3.b)--->
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> <!-- En este caso, la imagen y el texto "Click aquí" son elementos separados dentro del mismo párrafo. La imagen no es parte del enlace, por lo que al hacer clic en la imagen no se activará el enlace. El atributo src es obligatorio para la imagen, mientras que alt es también obligatorio para proporcionar un texto alternativo. El atributo href es obligatorio para el enlace. -->
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> <!-- Aquí, la imagen está envuelta dentro del enlace, lo que significa que al hacer clic en la imagen se activará el enlace y llevará a la página de Google. El texto "Click aquí" es solo texto plano y no forma parte del enlace. Nuevamente, los atributos src y alt son obligatorios para la imagen, y href es obligatorio para el enlace. -->
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p> <!-- En este caso, tanto la imagen como el texto "Click aquí" están dentro del enlace. Esto significa que al hacer clic en cualquiera de los dos (la imagen o el texto), se activará el enlace y llevará a la página de Google. Los atributos src y alt son obligatorios para la imagen, y href es obligatorio para el enlace. -->
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+href="http://www.google.com.ar">Click aquí</a></p> <!-- Aquí, tanto la imagen como el texto "Click aquí" son enlaces separados que llevan a la misma página de Google. Al hacer clic en la imagen o en el texto, se activará el mismo enlace. Los atributos src y alt son obligatorios para la imagen, y href es obligatorio para ambos enlaces. -->
+
+<!-- 3.c) -->
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul> <!-- La etiqueta <ul> define una lista desordenada, y cada elemento de la lista se coloca dentro de una etiqueta <li>. En este caso, hay tres elementos en la lista: "xxx", "yyy" y "zzz". La estructura correcta requiere que cada elemento esté encerrado en su propia etiqueta <li>. -->
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol> <!-- La etiqueta <ol> define una lista ordenada, y cada elemento de la lista se coloca dentro de una etiqueta <li>. En este caso, hay tres elementos en la lista: "xxx", "yyy" y "zzz". Al igual que con las listas desordenadas, cada elemento debe estar encerrado en su propia etiqueta <li>. -->
+
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol> <!-- Aquí, cada elemento de la lista está contenido en su propia lista ordenada separada. El primer elemento "xxx" es el primer ítem de su lista, el segundo elemento "yyy" tiene un atributo value="2" que indica que es el segundo ítem, y el tercer elemento "zzz" tiene value="3", indicando que es el tercer ítem. Aunque esto técnicamente funciona, no es la forma convencional de crear una lista ordenada, ya que normalmente todos los elementos deberían estar dentro de una sola etiqueta <ol>. -->
+
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote> <!-- La etiqueta <blockquote> se utiliza para definir una sección que es una cita larga o un bloque de texto citado. Dentro del bloque, se utiliza un párrafo <p> para contener el texto, y los saltos de línea <br /> se emplean para separar los elementos "xxx", "yyy" y "zzz". Aunque esto crea una apariencia similar a una lista, no es semánticamente correcto para representar una lista ordenada, ya que no utiliza las etiquetas <ol> y <li> adecuadas. -->
+
+<!-- 3.d) -->
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table> <!-- La etiqueta <table> define una tabla en HTML. El atributo border="1" añade un borde alrededor de la tabla y sus celdas, mientras que width="300" establece el ancho total de la tabla en 300 píxeles. Dentro de la tabla, las filas se definen con la etiqueta <tr>, los encabezados de columna con <th>, y las celdas de datos con <td>. En este ejemplo, hay una fila de encabezado con dos columnas ("Columna 1" y "Columna 2") y dos filas de datos con dos celdas cada una ("Celda 1", "Celda 2", "Celda 3", "Celda 4"). -->
+
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Colum
+na1</strong></div></td>
+<td><div align="center"><strong>Columna
+2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table> <!-- Similar a la tabla anterior, pero en lugar de usar <th> para los encabezados de columna, se utilizan celdas normales <td> que contienen un <div> con align="center" para centrar el texto y un <strong> para poner el texto en negrita. Aunque esto logra un efecto visual similar al uso de <th>, no es semánticamente correcto, ya que los encabezados de columna deberían definirse con <th> para mejorar la accesibilidad y la estructura del documento. -->
+
+<!-- 3.e) --> 
+<table width="200">
+<caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table> <!-- La etiqueta <table> define una tabla con un ancho de 200 píxeles, especificado por el atributo width="200". La etiqueta <caption> proporciona un título para la tabla, que en este caso es "Título". Cada fila de la tabla se define con la etiqueta <tr>, y las celdas de datos dentro de cada fila se definen con la etiqueta <td>. El atributo bgcolor="#dddddd" en cada celda establece un color de fondo gris claro para las celdas. El contenido de las celdas es un espacio no separable (&nbsp;), que asegura que las celdas tengan algo de contenido y no colapsen. -->
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table> <!-- En esta tabla, el título "Título" se coloca en la primera fila utilizando una celda que abarca las tres columnas, gracias al atributo colspan="3". El contenido del título está centrado dentro de la celda mediante un <div> con align="center". Las filas siguientes contienen celdas con un color de fondo gris claro, definido por el atributo bgcolor="#dddddd", y cada celda contiene un espacio no separable (&nbsp;) para asegurar que las celdas tengan contenido. La tabla tiene un ancho total de 200 píxeles, especificado por el atributo width="200". -->
+
+<!-- 3.f) -->
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table> <!-- Esta tabla tiene un ancho de 200 píxeles, definido por el atributo width="200". La primera fila contiene una celda que abarca las tres columnas (colspan="3") y centra el título "Título" utilizando un <div> con align="center". En la segunda fila, la primera celda utiliza rowspan="2" para abarcar dos filas verticalmente, mientras que las otras dos celdas en esa fila y las dos celdas en la tercera fila tienen un color de fondo gris claro, especificado por bgcolor="#dddddd". Cada celda contiene un espacio no separable (&nbsp;) para asegurar que tengan contenido. -->
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table> <!-- En esta tabla, el título "Título" se coloca en la primera fila utilizando una celda que abarca las tres columnas, gracias al atributo colspan="3". El contenido del título está centrado dentro de la celda mediante un <div> con align="center". En la segunda fila, la primera celda abarca dos columnas (colspan="2") y tiene un color de fondo gris claro, definido por el atributo bgcolor="#dddddd", al igual que la tercera celda en esa fila. La tercera fila contiene tres celdas, todas con el mismo color de fondo gris claro. Cada celda contiene un espacio no separable (&nbsp;) para asegurar que las celdas tengan contenido. La tabla tiene un ancho total de 200 píxeles, especificado por el atributo width="200". -->
+
+<!-- 3.g) -->
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table> <!-- Esta tabla tiene un ancho de 200 píxeles y un borde alrededor de la tabla y sus celdas, definido por el atributo border="1". La primera fila contiene una celda que abarca las tres columnas (colspan="3") y centra el título "Título" utilizando un <div> con align="center". En la segunda fila, la primera celda abarca dos columnas (colspan="2") y dos filas (rowspan="2"), mientras que la tercera celda en esa fila contiene un espacio no separable (&nbsp;). La tercera fila tiene una sola celda que ocupa el 50% del ancho de la tabla, especificado por width="50%", y también contiene un espacio no separable (&nbsp;). Cada celda tiene contenido para asegurar que no colapsen. -->
+
+<table width="200" border="1" cellpadding="0"
+cellspacing="0">
+<tr>
+<td colspan="2"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table> <!-- Esta tabla tiene un ancho de 200 píxeles, un borde alrededor de la tabla y sus celdas (border="1"), sin espacio entre las celdas (cellspacing="0") y sin espacio interno en las celdas (cellpadding="0"). La primera fila contiene una celda que abarca dos columnas (colspan="2") y centra el título "Título" utilizando un <div> con align="center". En la segunda fila, la primera celda abarca dos filas verticalmente (rowspan="2"), mientras que la segunda celda en esa fila contiene un espacio no separable (&nbsp;). La tercera fila tiene una sola celda que ocupa el 50% del ancho de la tabla, especificado por width="50%", y también contiene un espacio no separable (&nbsp;). Cada celda tiene contenido para asegurar que no colapsen. -->
+
+<!-- 3.h) -->
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form> <!-- La etiqueta <form> define un formulario HTML. El atributo id="form1" y name="form1" identifican el formulario de manera única. El atributo action="procesar.php" especifica la URL a la que se enviarán los datos del formulario cuando se envíe. El atributo method="post" indica que los datos se enviarán utilizando el método POST, y target="_blank" hace que el formulario se abra en una nueva pestaña o ventana al enviarse. Dentro del formulario, se utiliza un <fieldset> para agrupar los elementos relacionados, con una leyenda "LOGIN" que describe el propósito del grupo. Hay dos campos de entrada: uno para el usuario (type="text") y otro para la clave (type="password"), ambos con valores predefinidos de "xxx". Finalmente, hay un botón de envío (type="submit") que permite al usuario enviar el formulario. Todos los atributos mencionados son opcionales, excepto action y method, que son necesarios para que el formulario funcione correctamente. -->
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form> <!-- Similar al formulario anterior, pero con algunas diferencias. La etiqueta <form> define un formulario con id="form2" y name="form2". El atributo action="" está vacío, lo que significa que los datos se enviarán a la misma URL del formulario. El método de envío es GET (method="get"), y target="_blank" hace que el formulario se abra en una nueva pestaña o ventana al enviarse. Dentro del formulario, no se utiliza un <fieldset>, sino que simplemente se muestra el texto "LOGIN" seguido de un salto de línea (<br />). Los campos de entrada para el usuario y la clave están envueltos en etiquetas <label>, lo que mejora la accesibilidad al asociar el texto con el campo correspondiente. Ambos campos son de tipo texto (type="text") y no tienen valores predefinidos. Finalmente, hay un botón de envío (type="submit") para enviar el formulario. Al igual que antes, los atributos action y method son necesarios para que el formulario funcione correctamente, mientras que los demás son opcionales. -->
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form><!-- Crea un formulario de login dentro de una página HTML. Incluye dos campos: uno de texto para ingresar el usuario y otro de tipo password para la clave. El formulario está configurado para enviar los datos por correo electrónico (con mailto:xx@xx.com) en formato de texto plano, abriendo el resultado en una nueva pestaña. Además, tiene un botón de tipo reset (aunque su valor dice "Enviar"), que en realidad borra lo escrito en los campos en lugar de enviarlo.-->
+
+<!-- 3.i) -->
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label> <!-- Crea un botón personalizado identificado como boton1. Dentro del botón se muestra una imagen y, debajo, el texto en negrita CLICK AQUÍ. El botón no envía formularios ni realiza acciones por sí mismo-->
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label> <!-- Este código crea un botón simple con el texto CLICK AQUÍ, identificado como boton2. Está dentro de un <label> que lo asocia al texto Botón 2. Al igual que el anterior, no realiza ninguna acción por sí mismo-->
+
+<!-- 3.j) -->
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p> <!-- Este código crea un grupo de botones de opción (radio buttons) con dos alternativas: X y Y. Ambos comparten el mismo atributo name="opcion", por lo que el usuario solo puede seleccionar una opción a la vez. Cada botón está dentro de un <label>, lo que permite hacer clic directamente en el texto (X o Y) para marcar la opción correspondiente.-->
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p> <!--Este código crea dos botones de opción (radio buttons) pero, como tienen distinto atributo name (opcion1 y opcion2), no forman parte del mismo grupo. Esto significa que el usuario puede seleccionar ambos a la vez, a diferencia del caso anterior donde solo se podía elegir una opción.-->
+
+<!-- 3.k) -->
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select> <!--Este código crea un menú desplegable (<select>) llamado lista. Dentro tiene dos grupos de opciones (<optgroup>): Caso 1 y Caso 2, cada uno con las opciones Mayo y Junio. El usuario puede desplegar la lista y elegir una sola opción entre todas las disponibles.-->
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select> <!-- Este código genera un menú desplegable múltiple llamado lista[]. Gracias al atributo multiple="multiple", el usuario puede seleccionar varias opciones a la vez. Las opciones están organizadas en dos grupos (<optgroup>): Caso 1 y Caso 2, cada uno con Mayo y Junio.-->
+

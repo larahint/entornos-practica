@@ -1,0 +1,94 @@
+<!-- 2.a) -->
+    <!-- Código controlado el día 12/08/2009 -->
+     <!-- Es un comentario HTML. Se puede colocar en cualquier parte del documento y no se 
+     visualiza en el navegador. Su función es dejar notas internas para el programador. 
+     No contiene etiquetas HTML activas ni atributos, y no es obligatorio incluirlo. -->
+
+<!-- 2.b) -->
+    <div id="bloque1">Contenido del bloque1</div>
+    <!-- Contenido del bloque1</div> se coloca en la sección <body> del documento HTML. Produce 
+        un bloque que contiene el texto "Contenido del bloque1". La etiqueta <div> es un 
+        contenedor genérico de tipo bloque. El atributo id="bloque1" identifica el elemento
+        de forma única, lo que permite aplicarle estilos. Este atributo no es obligatorio -->
+
+<!--2.c)-->
+    <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+    longdesc="detalles.htm" />
+    <!-- El elemento <img> se coloca dentro del <body> y sirve para mostrar una imagen. En 
+    este caso, no se mostrará ninguna imagen porque el atributo src está vacío, pero sí 
+    se verá el texto alternativo "lugar imagen". Esta etiqueta es vacía (no tiene etiqueta
+    de cierre). Los atributos src y alt son obligatorios, mientras que id, name, width, 
+    height y longdesc son opcionales. El atributo longdesc apunta a una descripción 
+    extensa del contenido de la imagen, pero su uso es poco común hoy en día.-->
+
+<!--2.d) -->
+    <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+    <meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+    <!-- La etiquetas <meta> se colocan dentro de la sección <head>. En el primero su efecto es
+    definir un conjunto de palabras clave asociadas a la página, con la intención de que
+    los motores de búsqueda las utilicen para indexar el contenido. El elemento utilizado 
+    es <meta>, que es una etiqueta vacía. Entre sus atributos se encuentran: 
+    name="keywords", que indica que el metadato corresponde a palabras clave; lang="es", 
+    que señala que el contenido está en idioma español; y content="casa, compra, venta, 
+    alquiler ", que contiene las palabras clave. De estos, los atributos name y content
+    son necesarios para que el metadato tenga sentido, mientras que lang es opcional.
+        
+    En el segundo, su efecto es indicar la fecha y hora de expiración del documento, 
+    de modo que el navegador o los servidores intermedios no lo guarden en caché 
+    después de ese momento. Al igual que el anterior, el elemento es <meta> y se trata 
+    de una etiqueta vacía. Los atributos son http-equiv="expires", que simula un 
+    encabezado HTTP para establecer la fecha de caducidad, y content="16-Sep-2019 7:49 PM", 
+    que define esa fecha y hora específica. En este caso, tanto http-equiv como content son 
+    obligatorios para que la instrucción sea válida.-->
+
+<!--2.e) -->
+    <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+    rel="help">Resumen HTML </a>
+    <!-- Corresponde a un enlace que debe colocarse dentro del <body> de un documento HTML. 
+    Su función es mostrar el texto “Resumen HTML” como hipervínculo y, al hacer clic, dirigir 
+    al usuario a la dirección especificada en el atributo href.
+    El elemento utilizado es <a>, compuesto por una etiqueta de apertura, el texto visible y 
+    la etiqueta de cierre. El atributo href es obligatorio, ya que define el destino del 
+    enlace. Los demás atributos son opcionales pero aportan información extra: 
+    type="text/html" indica que el recurso enlazado es un documento HTML, hreflang="es" 
+    señala que está en español, charset="utf-8" especifica la codificación de caracteres 
+    del recurso, y rel="help" describe la relación del enlace con el documento actual. -->
+
+<!--2.f) -->
+    <table width="200" summary="Datos correspondientes al ejercicio vencido">
+        <caption align="top"> Título </caption>
+        <tr>
+             <th scope="col">&nbsp;</th>
+             <th scope="col">A</th>
+             <th scope="col">B</th>
+             <th scope="col">C</th>
+        </tr>
+        <tr>
+             <th scope="row">1º</th>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th scope="row">2º</th>
+             <td>&nbsp;</td> 
+             <td>&nbsp;</td>
+             <td>&nbsp;</td>
+        </tr>
+    </table>
+    <!--El código de la tabla se coloca en el <body> y genera una tabla de 3 columnas (A, B, 
+    C) y 2 filas de datos, con un título arriba.
+    El elemento <table> define la tabla. Usa el atributo width="200" que indica el ancho en
+    píxeles y summary="Datos correspondientes al ejercicio vencido" que brinda una descripción 
+    para accesibilidad. Ambos son opcionales.
+    El elemento <caption> muestra el título de la tabla. El atributo align="top" indica que 
+    la posición del título es arriba. También es opcional.
+    El elemento <tr> define cada fila.
+    El elemento <th> define los encabezados. Tiene el atributo scope="col" cuando se aplica 
+    a columnas y scope="row" cuando se aplica a filas. Estos atributos son opcionales, 
+    pero útiles para la accesibilidad.
+    El elemento <td> define las celdas de datos. En este caso contienen &nbsp;, que 
+    representa un espacio en blanco.
+    Los elementos obligatorios son <table>, <tr> y <td>/<th>. El resto de los atributos
+    son opcionales-->

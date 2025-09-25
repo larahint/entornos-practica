@@ -1,0 +1,66 @@
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para estructurar y 
+presentar documentos en la Web. Fue creado en 1991 por Tim Berners-Lee en el CERN, como parte 
+del proyecto de la World Wide Web.
+
+Las versiones más importantes fueron:
+HTML 2.0 (1995): primera estandarización oficial.
+HTML 3.2 (1997): introdujo tablas, scripting y nuevos elementos.
+HTML 4.01 (1999): recomendación del W3C, mejoró la accesibilidad y reforzó el uso de CSS.
+XHTML 1.0 (2000): versión más estricta, basada en XML.
+HTML5 (2014): recomendación del W3C, añadió elementos semánticos, soporte para multimedia 
+nativa, gráficos, almacenamiento local y APIs modernas.
+
+La última versión vigente es HTML5, mantenida por el W3C y el WHATWG.
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos
+con HTML?
+El W3C establece una serie de principios fundamentales:
+Separación de estructura y presentación: usar HTML para el contenido y CSS para el diseño 
+visual.
+Compatibilidad: asegurar que los documentos funcionen en navegadores pasados, presentes y 
+futuros.
+Accesibilidad: permitir que personas con discapacidades puedan acceder y comprender la 
+información (uso correcto de alt, title, semántica adecuada).
+Uso semántico de las etiquetas: aplicar los elementos de acuerdo con su propósito real, y no 
+con fines meramente estéticos.
+Interoperabilidad y validez: generar documentos que cumplan los estándares para garantizar un 
+funcionamiento uniforme en diferentes navegadores y dispositivos.
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y
+obsoleto?
+Un elemento o atributo se considera desaprobado (deprecated) cuando aún forma parte de la 
+especificación y es soportado por los navegadores, pero se desaconseja su uso porque existe 
+una alternativa más moderna y adecuada.
+En cambio, se considera obsoleto (obsolete) cuando ya no debe usarse bajo ninguna circunstancia
+y ha sido eliminado de la especificación, pudiendo incluso dejar de ser reconocido por los 
+navegadores actuales.
+Ejemplo: en HTML 4.01, el elemento <center> estaba desaprobado, ya que debía reemplazarse con 
+CSS (text-align: center;). En HTML5, ese mismo elemento ya es obsoleto, por lo que no pertenece
+a la especificación.
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+El DTD (Document Type Definition) es un esquema que define la estructura, las reglas y la 
+sintaxis que debe seguir un documento HTML. Sirve para que el navegador pueda interpretar 
+correctamente qué elementos son válidos, qué atributos pueden utilizarse y cómo deben 
+organizarse. En la especificación de HTML 4.01 existen tres tipos de DTD:
+HTML 4.01 Strict, que no permite elementos ni atributos desaprobados y busca una separación 
+total entre estructura y presentación.
+HTML 4.01 Transitional, que admite elementos y atributos desaprobados (como <center> o <font>), 
+pensado para facilitar la transición desde versiones anteriores.
+HTML 4.01 Frameset, diseñado para documentos que utilizan marcos, permitiendo dividir la 
+ventana del navegador en distintas secciones independientes.
+Cada documento debe indicar el DTD que utiliza mediante la declaración <!DOCTYPE ...> en la 
+primera línea.
+
+5. Qué son los metadatos y cómo se especifican en HTML?
+Los metadatos son información acerca del propio documento HTML que no se muestra como contenido 
+en la página, pero que resulta útil para navegadores, buscadores, redes sociales y otros 
+sistemas. Se especifican dentro de la sección <head> del documento, principalmente a través 
+de la etiqueta <meta>. Algunos ejemplos comunes son la codificación de caracteres (<meta 
+charset="UTF-8">), la descripción del sitio para buscadores (<meta name="description" 
+content="...">), las palabras clave (<meta name="keywords" content="...">), el autor (<meta 
+name="author" content="...">) y la configuración de la vista en dispositivos móviles (<meta 
+name="viewport" content="width=device-width, initial-scale=1.0">). Estos datos permiten 
+mejorar la accesibilidad, el posicionamiento en motores de búsqueda y la correcta 
+visualización en distintos dispositivos.
