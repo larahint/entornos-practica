@@ -1,0 +1,30 @@
+/* 1. Los textos enfatizados dentro de cualquier título deben ser rojos.*/
+    h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+    color: red;
+    }
+    /* Indica que cualquier texto dentro de una etiqueta de énfasis <em> que se encuentre en un título (h1 a h6) debe mostrarse en rojo.*/
+
+/* 2. Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a su vez esté dentro de un bloque debe ser color negro.*/
+    div p [href] {
+    color: black;
+    }
+    /*Significa que cualquier elemento que tenga el atributo href (como un enlace <a>) dentro de un párrafo <p> que, a su vez, esté dentro de un bloque <div>, se mostrará en negro.*/
+
+/* 3. El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser amarillo pero si es un enlace a otra página debe ser azul.*/
+    #ultimo ul { color: yellow; }
+    #ultimo ul a { color: blue; }
+    /*Indican que los textos de listas no ordenadas <ul> dentro del bloque con id ultimo deben ser amarillos, excepto los enlaces dentro de esas listas, que se muestran en azul.*/
+
+/* 4. Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si están dentro de un título deben ser rojos.*/
+    div #importante { color: green; }
+    h1 #importante, h2 #importante, h3 #importante { color: red; }
+    /*Definen que cualquier elemento identificado como id="importante" dentro de un bloque <div> se verá en verde, pero si aparece dentro de un título (h1, h2, h3), entonces se verá en rojo.*/
+
+/* 5. Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules.*/
+    h1[title] { color: blue; }
+    /*Selecciona todos los títulos <h1> que tengan un atributo title, cualquiera sea su valor, y los muestra en azul.*/
+
+/*6. El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta para los ya visitados y, además, no deben aparecer subrayados.*/
+    ol a:link { color: blue; text-decoration: none; }
+    ol a:visited { color: violet; text-decoration: none; }
+    /*Definen que los enlaces dentro de listas ordenadas <ol> deben ser azules si aún no fueron visitados y violetas si ya se visitaron. Además, no deben mostrar subrayado.*/
