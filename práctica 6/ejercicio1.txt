@@ -1,0 +1,20 @@
+“Para inicializar esta conexión, PHP ofrece la función …” → mysqli_connect().
+
+“Tres parámetros que generalmente son necesarios:” → servidor/host, usuario, contraseña.
+
+“Seleccionar una base de datos para su uso, mediante la función …” → mysqli_select_db().
+
+“Esta función debe pasar como parámetro …” → el link de conexión  y el nombre de la base.
+
+“La función mysqli_query() se utiliza para …” → enviar/ejecutar una consulta SQL al servidor.
+
+“y requiere como parámetros …” → link de conexión y consulta SQL (string).
+
+“La cláusula or die() se utiliza para …” → interrumpir el script si ocurre un error y mostrar un mensaje.
+
+“y la función mysqli_error() se puede usar para …” → obtener el mensaje del último error de MySQL .
+
+Explicación del fragmento propuesto: (loop + liberación/cierre)
+mysqli_fetch_array($vResultado) obtiene una fila por vez del conjunto de resultados; cuando no hay más filas, devuelve false y termina el while.
+Dentro del bucle se generan filas <tr> con celdas <td> para cada campo mostrado.
+Al final, se libera el resultset y se cierra la conexión.

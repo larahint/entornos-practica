@@ -1,0 +1,1 @@
+$conexion = mysqli_connect("localhost","root","","base2");
