@@ -1,0 +1,2 @@
+a)Imprime una línea con la hora y fecha actuales en el formato: Has entrado en esta pagina a las HH horas, con MM minutos y SS segundos, del DD/MM/YYYY
+b) Imprime: 5+6=11

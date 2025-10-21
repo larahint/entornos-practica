@@ -1,0 +1,6 @@
+a)
+if/elseif y switch: sirven para mostrar un mensaje distinto según el valor de la variable $i (0, 1 o 2). Es selección condicional sobre un mismo dato.
+b)
+Genera una página con una tabla de 5 filas × 2 columnas con celdas vacías. Es un ejemplo de cómo producir HTML desde PHP con bucles anidados.
+c)
+Muestra un formulario para ingresar la edad. Al enviarlo, el script procesa $_POST['age'] y muestra “Mayor de edad” si es >= 21 o “Menor de edad” en caso contrario.

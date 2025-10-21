@@ -1,0 +1,34 @@
+Variables y tipos:
+$a (boolean TRUE), $b (string "xyz"), $c (string 'xyz'), $d (int 12), $f (int), $g (int), parámetro $i en doble($i).
+
+Funciones y parámetros:
+doble($i) → retorna $i * 2; llamadas a funciones nativas: gettype($var), is_int($d), is_string($a).
+
+Operadores:
+Aritméticos: *, +, +=;
+Incremento: ++$d (pre), $d++ (post);
+Ternario: $a ? ... : ...;
+Asignación compuesta: $f += 10;
+Concatenación en echo usando comas.
+
+Estructuras de control:
+if (...) { ... }
+
+Salida por pantalla :
+
+echo gettype(...) → booleanstringstringinteger
+
+Tras los if y operaciones:
+
+is_int($d) → $d pasa de 12 a 16.
+
+Ternario con $a verdadero → ++$d → 17.
+
+$f = doble($d++) → doble(17)=34 y luego $d 18.
+
+$f += 10 → $f 44 y $g = 44.
+
+echo $a, $b, $c, $d, $f, $g → 1xyzxyz184444.
+
+Salida total:
+booleanstringstringinteger1xyzxyz184444.

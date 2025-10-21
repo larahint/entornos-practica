@@ -1,0 +1,2 @@
+Antes del include, como $flor y $color no existen todavía, esa línea no aporta texto útil de variables.
+Después del include, imprime: El clavel blanco.

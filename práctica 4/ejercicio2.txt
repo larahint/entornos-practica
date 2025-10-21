@@ -1,0 +1,1 @@
+Sí, son equivalentes en la salida: todos imprimen los números del 1 al 10 en ese orden y sin separadores.  
